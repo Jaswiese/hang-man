@@ -1,0 +1,85 @@
+.help-modal-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.74);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-modal-container {
+  width: 40vw;
+  height: auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: column;
+  padding: 25px;
+}
+
+.help-modal-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.help-modal-close-button-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.help-modal-close-button-top .close-icon {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.help-modal-body {
+  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.help-modal-footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-modal-footer .close-button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(202, 65, 65);
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.help-btn {
+  background-color: rgba(236, 224, 58, 0.986);
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+  box-shadow: 0px 0px 0px 1px rgb(119, 119, 119);
+  margin: 3rem;
+}
+
+.help-btn:hover {
+  background-color: rgba(236, 123, 58, 0.986);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(236, 123, 58, 0.986);
+}

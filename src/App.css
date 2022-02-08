@@ -1,38 +1,138 @@
 .App {
-  text-align: center;
+  background-color: white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.website-title {
+  font-size: 4em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*GAME FIELD - HANG MAN GRAPHIC AREA & LETTERS CONTROL STYLING START HERE*/
+.game-field {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: column;
+}
+/*Hangman graphic area*/
+.hang-man-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  max-width: 20em;
+  max-height: 20em;
+  padding: 2rem;
+  border: 3px solid rgb(64, 136, 196);
+  box-shadow: 0px 4px 4px 1px rgb(119, 119, 119);
+}
+
+.hang-man-graphic {
+  max-width: 15em;
+  max-height: 15em;
+}
+/* LETTER BUTTON & LETTER STYLING START HERE*/
+/*default styling*/
+.letter-control-btn {
+  border: 3px solid rgb(64, 136, 196);
+  box-shadow: 0px 4px 4px 1px rgb(119, 119, 119);
+  color: rgb(64, 136, 196);
+  border-radius: 40px;
+  background-color: white;
+  width: 1.5em;
+  height: auto;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0.3em;
+}
+/*styling toggled if the letter clicked is correct*/
+.letter-selected-correct {
+  border: 3px solid rgb(52, 138, 49);
   color: white;
+  background-color: rgb(52, 138, 49);
+  font-weight: bold;
+}
+.letter-selected-incorrect {
+  border: 3px solid rgb(138, 49, 49);
+  color: white;
+  background-color: rgb(138, 49, 49);
+  font-weight: bold;
+}
+.letters-container {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid rgb(89, 132, 212);
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 1px rgb(119, 119, 119);
+  justify-content: center;
+  align-items: center;
+  max-width: 30em;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.letter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 30em;
+}
+.letter-controls-title {
+  text-align: center;
+  margin: auto;
+  padding: 1.5em;
+}
+/*Letter and button styling end here*/
+/*Word Line & char styling starts here*/
+.word-char {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.word-char-con {
+  border-bottom: 2px solid black;
+  margin: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hide {
+  display: none;
+  visibility: hidden;
 }
+
+.show {
+  visibility: visible;
+}
+/*Word Line & char styling end here*/
+/*CONTROLS CSS START HERE*/
+.game-control {
+  padding: 2em;
+  background-color: green;
+}
+
+#reset-button {
+  margin: 1em;
+  background-color: rgb(180, 46, 12);
+  border: 1px solid rgb(100, 93, 93);
+  box-shadow: 0px 0px 3px 2px rgb(5, 5, 5);
+  font-size: 3em;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 3em;
+}
+
+#start-button {
+  margin: 1em;
+  background-color: rgb(24, 117, 32);
+  border: 1px solid rgb(100, 93, 93);
+  box-shadow: 0px 0px 3px 2px rgb(5, 5, 5);
+  font-weight: bold;
+  font-size: 3em;
+  border-radius: 15px;
+  width: 3em;
+}
+
+#start-button:hover {
+  background-color: rgb(245, 168, 53);
+}
+
+#reset-button:hover {
+  background-color: rgb(245, 168, 53);
+}
+/*CONTROLS CSS END HERE*/

@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Hang-man - HyperionDev course work
+## Description: 
+This  project is a browser based hang-man game, currently allowing a user to play a game of hang-man. It was built in React, and uses redux toolkit as state management. Currently there is no data persistence or user profile/ retention. However, this is planned for in future releases.
+## Installation - cloning from git.
+#### Steps
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  **Navigate to the directory of your choice using CLI.** 
+  
+  ```
+  cd chosen-directory
+  
+  ```
+  **Using git commands in your CLI initialise the directory as a git repository.**
+  
+  ```
+  git init
+  
+  ```
+  
+  **Clone the repository using the repository URL*** 
+  
+  ```
+  git clone []
+  
+  ```
+  
+  You will now have the files in your chosen directory if you have followed the steps above/ and have access to the repository.
 
-## Available Scripts
+  ## Running the application
 
-In the project directory, you can run:
+  This application is a create-react-app bootstrap.
 
-### `npm start`
+  ### Prerequisites
 
-Runs the app in the development mode.\
+  you will need to have **npm** installed on your machine - please ensure that npm is also updated, to avoid any unexpected issues.
+
+  **To start the app, ensure that you are in the projects directly, and then run the following command in your terminal**
+  ```
+  npm start
+
+  ```
+This Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+The hang-man game has a standard set of rules, that normally apply to two players, however in this game the user will only be playing the role of the player who guesses the word, whilst the application will generate random words for the user to guess.\
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### General rules & flow of the game
 
-### `npm run build`
+* The user has eleven guesses to guess the letters that are contained within the word the application is displaying.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Guesses are made using the letter panel in the application self\
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* correct guesses will reveal the letter on the word line, as well as turn the letter on the letter panel green\
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* incorrect guess will initiate a graphically change for the hangman graphic, and turn the letter on the letter panel red\
 
-### `npm run eject`
+* When the user has either won or lost, a message will be shown to the user with the word they were guessing and the result.\
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* the user can then reset the game and try a different word.\
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Roadmap
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This game was developed for my HyperionDev course work, however there are some changes that I have planned to make in the future,
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Planned updates & changes
 
-## Learn More
+These updates or changes are in no particular order
+1. User creation & authentication 
+2. User play data persistence
+3. Global leader board 
+4. Additional animations on game results (correct choice/ incorrect choice, win/ lose)
+5. General UI clean up/ mobile responsiveness
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Currently no contribution is accepted to the repositiory, but will change in the future - this section will be updated if so.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Copyright 2022 Jasper Wiese
 
-### Analyzing the Bundle Size
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  [APACHE2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
