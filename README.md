@@ -34,6 +34,13 @@ This  project is a browser based hang-man game, currently allowing a user to pla
 
   you will need to have **npm** installed on your machine - please ensure that npm is also updated, to avoid any unexpected issues.
 
+  **First install all of the dependencies, run the follow command (in the project directory)**
+
+  ```
+  npm install
+
+  ```
+
   **To start the app, ensure that you are in the projects directly, and then run the following command in your terminal**
   ```
   npm start
